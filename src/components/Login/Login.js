@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -15,7 +16,9 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" name="password" required />
                 </div>
+
                 <input className='btn-submit' type="submit" value="login" />
+                <p>New to ema-john? go to <Link to="/sign ">SignUp</Link> </p>
             </form>
         </div>
     );
